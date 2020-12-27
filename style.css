@@ -33,7 +33,7 @@ body{
 }
 
 input:focus, button:focus{
-    outline: none
+    outline: none;
 }
 
 .btn-submit{
@@ -83,6 +83,7 @@ h2{
     width: 20px;
     cursor: pointer;
 }
+
 
 .btn-reset{
     width: 15%;
