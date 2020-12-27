@@ -2,9 +2,10 @@ var bucketList=[];
 var listItem=document.getElementById("list-container");
 
 function addValues(){
-    let value=document.getElementById("input-field").value;
-    bucketList.push(value);
+    let value=document.getElementById("input-field");
+    bucketList.push(value.value);
     showList();
+    value.value="";
 }
 
 function showList(){
