@@ -1,12 +1,19 @@
 var bucketList=[];
 var listItem=document.getElementById("list-container");
+let value=document.getElementById("input-field");
 
-function addValues(){
-    let value=document.getElementById("input-field");
+
+value.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("add").click();
+     let value=document.getElementById("input-field");
     bucketList.push(value.value);
     showList();
     value.value="";
-}
+    }
+  });
+
 
 function showList(){
     listItem.innerHTML="";
